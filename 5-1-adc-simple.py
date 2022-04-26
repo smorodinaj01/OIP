@@ -22,11 +22,9 @@ GPIO.setup(comp, GPIO.IN)
 # умолчанию при помощи аргумента initial
 GPIO.setup(troyka, GPIO.OUT, initial = GPIO.HIGH)
 
-
 # Функция перевода десятичного числа в список 0 и 1
 def decimal2binary(i):
         return [int(elem) for elem in bin(i)[2:].zfill(8)]
-
 
 
 # Функция adc() возвращает десятичное число, пропорциональное напряжению клемме S тройка-модуля
